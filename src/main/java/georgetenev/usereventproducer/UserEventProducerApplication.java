@@ -25,7 +25,6 @@ public class UserEventProducerApplication {
 	@Bean
 	public ApplicationRunner runner(KafkaAdmin kafkaAdmin) {
 		return args -> {
-			AdminClient admin = AdminClient.create(kafkaAdmin.getConfigurationProperties());
 			HashMap<String, KafkaProperties.TopicProperties> topics = kafkaProperties.getTopics();
 			List<NewTopic> newTopics = new ArrayList<>();
 
