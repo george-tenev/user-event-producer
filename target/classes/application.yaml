@@ -1,0 +1,11 @@
+kafka:
+  bootstrap-servers: localhost:29092
+  topics:
+    login:
+      partitions: 1
+      replication-factor: 1
+    user:
+      partitions: 1
+      replication-factor: 1
+
+    
