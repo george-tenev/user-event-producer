@@ -2,7 +2,6 @@ package georgetenev.usereventproducer.service;
 
 import georgetenev.usereventproducer.dto.UserLogin;
 
-import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
