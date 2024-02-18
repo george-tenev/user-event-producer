@@ -19,8 +19,10 @@ public class UserEventProducerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(UserEventProducerApplication.class, args);
 	}
+
 	@Autowired
     KafkaProperties kafkaProperties;
+	
 	@Bean
 	public ApplicationRunner runner(KafkaAdmin kafkaAdmin) {
 		return args -> {
